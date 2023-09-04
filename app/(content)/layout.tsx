@@ -5,10 +5,7 @@ import { useRouter } from 'next/navigation';
 import { Loader } from '@/components/Loader/Loader';
 import { readUser } from "@/utils/readUser";
 import { Navigation } from '../ui/Navigation';
-
-export const metadata = {
-  title: 'MicroBlogging',
-}
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const navLinks = [
   {
@@ -20,6 +17,8 @@ const navLinks = [
     link: '/authors',
   }
 ];
+
+const queryClient = new QueryClient();
 
 interface Props {
   children: React.ReactNode,
@@ -55,8 +54,10 @@ const ContentLayout: React.FC<Props> = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <Navigation navLinks={navLinks} />
-        {children}
+        <QueryClientProvider client={queryClient}>
+          <Navigation navLinks={navLinks} />
+          {children}
+        </QueryClientProvider>
       </body>
     </html>
   )

@@ -5,10 +5,6 @@ import { useRouter } from 'next/navigation';
 import { Loader } from '@/components/Loader/Loader';
 import { readUser } from "@/utils/readUser";
 
-export const metadata = {
-  title: 'MicroBlogging',
-}
-
 interface Props {
   children: React.ReactNode,
 }
