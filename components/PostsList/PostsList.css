@@ -1,0 +1,68 @@
+.posts {
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.posts::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+.posts::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+.posts::-webkit-scrollbar-thumb {
+  background-color: #1a90ff;
+  outline: none;
+}
+
+.posts__list {
+  list-style: none;
+}
+
+.posts__item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  height: 50px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+}
+
+.posts__id {
+  border-right: 1px solid rgba(100, 100, 100, 0.4);
+  text-align: center;
+  line-height: 50px;
+}
+
+.posts__post-column {
+  text-align: center;
+  line-height: 50px;
+}
+
+.posts__button {
+  border: none;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+  background-color: #fff;
+  transition: background-color 300ms;
+}
+
+.posts__button:hover {
+  background-color: #eee;
+}
+
+.posts__name {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.posts__created-at {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.posts__choose-author {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+}

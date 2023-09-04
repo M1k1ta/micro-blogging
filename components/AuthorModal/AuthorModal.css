@@ -1,0 +1,49 @@
+.author-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.author-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.author-modal__form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.author-modal__title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.author-modal__textarea {
+  margin-bottom: 30px;
+  resize: vertical;
+  font-size: 16px;
+  padding: 10px;
+  max-height: 400px;
+  height: 200px;
+}
+
+.author-modal__button {
+  height: 50px;
+}
+

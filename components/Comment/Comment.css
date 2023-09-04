@@ -1,0 +1,28 @@
+.comment {
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.comment__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #002;
+  height: 30px;
+}
+
+.comment__email {
+  color: #fff;
+  font-size: 14px;
+}
+
+.comment__created-at {
+  color: #fff;
+  font-size: 14px;
+}
+
+.comment__main {
+  padding: 20px;
+}

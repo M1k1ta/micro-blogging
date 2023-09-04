@@ -1,0 +1,48 @@
+.post {
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.post::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+.post::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+.post::-webkit-scrollbar-thumb {
+  background-color: #1a90ff;
+  outline: none;
+}
+
+.post__title {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.post__email {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.post__text {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.post__form {
+  margin-bottom: 40px;
+}
+
+.post__comment-input {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 5px;
+}

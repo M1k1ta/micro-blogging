@@ -1,0 +1,58 @@
+.authors {
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.authors::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+.authors::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+.authors::-webkit-scrollbar-thumb {
+  background-color: #1a90ff;
+  outline: none;
+}
+
+.authors__list {
+  list-style: none;
+}
+
+.authors__item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  height: 50px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+}
+
+.authors__id {
+  border-right: 1px solid rgba(100, 100, 100, 0.4);
+  text-align: center;
+  line-height: 50px;
+}
+
+.authors__email-column {
+  text-align: center;
+  line-height: 50px;
+}
+
+.authors__email {
+  border: none;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+  background-color: #fff;
+  transition: background-color 300ms;
+}
+
+.authors__email:hover {
+  background-color: #eee;
+}
+
+.not-find-authors {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+}
